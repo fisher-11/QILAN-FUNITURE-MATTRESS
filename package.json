@@ -1,0 +1,14 @@
+{
+  "name": "qilan-furniture",
+  "version": "1.0.0",
+  "description": "Qilan Furniture and Spring Mattress website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "sqlite3": "^5.1.7"
+  }
+}

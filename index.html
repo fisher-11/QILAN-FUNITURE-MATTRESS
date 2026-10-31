@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Qilan Furniture & Spring Mattress</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <body>
+
+<!-- QILAN LOADING SCREEN -->
+<div id="qilan-loader">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+            <div class="loader-icon">Q</div>
+            <div class="loader-name">
+                <h1>Qilan</h1>
+                <p>FURNITURE & SPRING MATTRESS</p>
+            </div>
+        </div>
+
+        <p class="loader-tagline">
+            BETTER FURNITURE • BETTER LIVING
+        </p>
+
+        <div class="loader-bar">
+            <div id="loader-progress"></div>
+        </div>
+
+        <p class="loader-status">Preparing your experience...</p>
+
+        <span id="loader-percent">0%</span>
+
+    </div>
+
+</div>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+
+    <span>📍 Kigali, Rwanda</span>
+
+    <span>Better Furniture • Better Living</span>
+
+    <span>☎ +250 789 470 492</span>
+
+</div>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <a class="brand" href="#home">
+
+        <div class="brand-mark">
+            Q
+        </div>
+
+        <div>
+            <strong>Qilan</strong>
+            <small>Furniture & Spring Mattress</small>
+        </div>
+
+    </a>
+
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#products">Products</a>
+
+        <a href="#about">About Us</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <button onclick="openSearch()"
+        class="icon-button"
+        title="Search">
+
+            <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"/>
+
+                <line x1="16" y1="16"
+                x2="22" y2="22"
+                stroke="currentColor"
+                stroke-width="2"/>
+            </svg>
+
+        </button>
+
+
+        <a href="admin.html"
+        class="icon-button"
+        title="Admin">
+
+            <svg viewBox="0 0 24 24">
+
+                <circle cx="12" cy="8"
+                r="4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"/>
+
+                <path d="M4 21c0-5 3-8 8-8s8 3 8 8"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"/>
+
+            </svg>
+
+        </a>
+
+
+        <button class="icon-button cart-button"
+        onclick="openCart()">
+
+            <svg viewBox="0 0 24 24">
+
+                <path d="M3 4h2l2 12h11l3-9H7"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"/>
+
+                <circle cx="9" cy="20"
+                r="1.5"/>
+
+                <circle cx="18" cy="20"
+                r="1.5"/>
+
+            </svg>
+
+            <span id="cartCount">0</span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<section class="hero">
+
+    <!-- HERO SLIDES -->
+    <div class="hero-slides">
+
+        <div class="hero-slide active"
+             style="background-image: url('images/hero.jpg');"></div>
+
+        <div class="hero-slide"
+             style="background-image: url('images/bed.jpg');"></div>
+
+        <div class="hero-slide"
+             style="background-image: url('images/sofa.jpg');"></div>
+
+        <div class="hero-slide"
+             style="background-image: url('images/coffee tables.jpg');"></div>
+<div class="hero-slide"
+style="background-image: url('images/wardrobe.jpg');"></div>
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="hero-small-title">
+            QUALITY FURNITURE FOR A BETTER TOMORROW
+        </p>
+
+        <h1>
+            Modern Furniture<br>
+            for Your <span>Dream Home</span>
+        </h1>
+
+        <p class="hero-description">
+            Discover stylish, comfortable and durable furniture
+            for every room. From elegant sofas to premium
+            mattresses, we bring comfort and class to your home.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#products" class="hero-btn primary">
+                Explore Collection →
+            </a>
+
+            <a href="#gallery" class="hero-btn secondary">
+                ▶ Watch Video
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-dots">
+        <span class="active"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+</section>
+
+
+<!- CATEGORY SECTION --!>
+<section class="categories">
+
+    <div class="categories-container">
+
+        <a href="#products" class="category-card">
+            <div class="category-image">
+                <img src="images/bed.jpg" alt="Beds">
+            </div>
+            <h3>Beds</h3>
+        </a>
+
+        <a href="#products" class="category-card">
+            <div class="category-image">
+                <img src="images/sofa.jpg" alt="Sofas">
+            </div>
+            <h3>Sofas</h3>
+        </a>
+
+        <a href="#products" class="category-card">
+            <div class="category-image">
+                <img src="images/wardrobe.jpg" alt="Wardrobe">
+            </div>
+            <h3>Wardrobes</h3>
+        </a>
+
+        <a href="#products" class="category-card">
+            <div class="category-image">
+                <img src="images/tv-stand.jpg" alt="tv-stands">
+            </div>
+            <h3>TV Stands</h3>
+        </a>
+
+        <a href="#products" class="category-card">
+            <div class="category-image">
+                <img src="images/dining.jpg" alt="Dining Tables">
+            </div>
+            <h3>Dining Tables</h3>
+        </a>
+
+        <a href="#products" class="category-card">
+            <div class="category-image">
+                <img src="images/coffee tables.jpg" alt="Coffee Tables">
+            </div>
+            <h3>Coffee Tables</h3>
+        </a>
+
+        <a href="#products" class="category-card">
+            <div class="category-image">
+                <img src="images/matress.jpg" alt="Matresses">
+            </div>
+            <h3>Mattresses</h3>
+        </a>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- PRODUCTS -->
+
+<section class="products-section"
+id="products">
+
+    <div class="section-heading">
+
+        <div>
+            <span>OUR COLLECTION</span>
+            <h2>Featured Products</h2>
+        </div>
+
+        <button onclick="loadProducts()"
+        class="view-all">
+
+            View All Products →
+
+        </button>
+
+    </div>
+
+
+    <div id="productsGrid"
+    class="products-grid">
+
+        <div class="loading">
+            Loading products...
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section class="about"
+id="about">
+
+    <div>
+
+        <span>ABOUT QILAN</span>
+
+        <h2>
+            Furniture Made For
+            <br>
+            <b>Better Living.</b>
+        </h2>
+
+        <p>
+            Qilan Furniture provides modern, comfortable and
+            durable furniture designed for homes and businesses
+            in Rwanda.
+        </p>
+
+    </div>
+
+    <div class="about-box">
+
+        <div>
+            <strong>Quality</strong>
+            <span>Materials</span>
+        </div>
+
+        <div>
+            <strong>Custom</strong>
+            <span>Measurements</span>
+        </div>
+
+        <div>
+            <strong>Fast</strong>
+            <span>Delivery</span>
+        </div>
+
+        <div>
+            <strong>Local</strong>
+            <span>Support</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section class="features">
+
+    <div>
+        <div class="feature-icon">🚚</div>
+        <h3>Fast Delivery</h3>
+        <p>Delivery across Rwanda</p>
+    </div>
+
+    <div>
+        <div class="feature-icon">🛡️</div>
+        <h3>Quality Guarantee</h3>
+        <p>Durable furniture</p>
+    </div>
+
+    <div>
+        <div class="feature-icon">📐</div>
+        <h3>Custom Measure</h3>
+        <p>Choose your dimensions</p>
+    </div>
+
+    <div class="payment-service">
+
+    <div class="payment-logos">
+
+        <!-- MTN MOMO -->
+        <div class="mtn-logo" title="MTN MoMo">
+            <svg viewBox="0 0 100 100" aria-label="MTN MoMo">
+                <circle cx="50" cy="50" r="47"></circle>
+                <text x="50" y="45" text-anchor="middle">MTN</text>
+                <text x="50" y="66" text-anchor="middle">MoMo</text>
+            </svg>
+        </div>
+
+        <!-- AIRTEL MONEY -->
+        <div class="airtel-logo" title="Airtel Money">
+            <svg viewBox="0 0 100 100" aria-label="Airtel Money">
+                <circle cx="50" cy="50" r="47"></circle>
+                <text x="50" y="44" text-anchor="middle">airtel</text>
+                <text x="50" y="64" text-anchor="middle">money</text>
+            </svg>
+        </div>
+
+    </div>
+
+    <h3>Secure Payment</h3>
+    <p>MTN MoMo & Airtel Money</p>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer id="contact">
+
+    <div class="footer-grid">
+
+        <div>
+
+            <div class="footer-brand">
+                Qilan
+            </div>
+
+            <p>
+                Furniture & Spring Mattress
+            </p>
+
+            <p class="footer-text">
+                Modern furniture for better living.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+
+            <a href="#products">Products</a>
+
+            <a href="#about">About Us</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>📍 Kigali, Rwanda</p>
+
+            <p>☎ +250 788 591 470</p>
+
+            <p>✉ info@qilanfurniture.rw</p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+
+                <!-- FACEBOOK -->
+
+                <a href="#"
+                title="Facebook">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.7.3-1 1-1z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a href="#"
+                title="Instagram">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <rect x="3" y="3"
+                        width="18"
+                        height="18"
+                        rx="5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"/>
+
+                        <circle cx="12"
+                        cy="12"
+                        r="4"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"/>
+
+                        <circle cx="17.5"
+                        cy="6.5"
+                        r="1"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- TIKTOK -->
+
+                <a href="#"
+                title="TikTok">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path d="M15 3v11a4 4 0 1 1-4-4v4a1 1 0 1 0 1 1V3h3z"/>
+
+                    </svg>
+
+                </a>
+
+
+                <!-- YOUTUBE -->
+
+                <a href="#"
+                title="YouTube">
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path d="M23 12s0-4-1-5c-1-1-4-1-10-1S3 6 2 7c-1 1-1 5-1 5s0 4 1 5c1 1 4 1 10 1s9 0 10-1c1-1 1-5 1-5z"/>
+
+                        <path d="M10 9l5 3-5 3z"
+                        fill="white"/>
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Qilan Furniture.
+        All rights reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+
+<a class="whatsapp"
+   href="https://wa.me/250789470492"
+   target="_blank">
+
+    <svg class="whatsapp-svg"
+         viewBox="0 0 24 24"
+         aria-label="WhatsApp">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M8.2 7.8c.3-.4.6-.4.9-.4h.7c.2 0 .4.1.5.4l.8 1.9c.1.3.1.5-.1.7l-.6.7c-.1.1-.1.3 0 .5.5.9 1.2 1.6 2.1 2.1.2.1.4.1.5 0l.7-.7c.2-.2.4-.2.7-.1l1.9.9c.3.1.4.3.4.5v.7c0 .3-.1.6-.4.8-.4.4-1 .6-1.6.6-1.3 0-3.1-.7-4.7-2.3-1.6-1.6-2.3-3.4-2.3-4.7 0-.7.2-1.3.5-1.7z"></path>
+    </svg>
+
+    <span>Chat on WhatsApp</span>
+
+</a>
+
+    WhatsApp
+
+</a>
+
+
+<!-- ORDER MODAL -->
+
+<div class="modal"
+id="orderModal">
+
+    <div class="modal-box">
+
+        <button class="modal-close"
+        onclick="closeOrder()">
+
+            ×
+
+        </button>
+
+        <h2>Customize Your Order</h2>
+
+        <div id="selectedProduct"></div>
+
+
+        <label>Width (cm)</label>
+
+        <input type="number"
+        id="orderWidth"
+        min="1">
+
+
+        <label>Length (cm)</label>
+
+        <input type="number"
+        id="orderLength"
+        min="1">
+
+
+        <label>Height (cm)</label>
+
+        <input type="number"
+        id="orderHeight"
+        min="1">
+
+
+        <label>Color</label>
+
+        <select id="orderColor">
+
+            <option>honey woak</option>
+            <option>Black</option>
+            <option>White</option>
+            <option>mable white</option>
+            <option>Grey</option>
+            <option>oxford</option>
+
+        </select>
+
+
+        <label>Quantity</label>
+
+        <input type="number"
+        id="orderQuantity"
+        value="1"
+        min="1"
+        oninput="updateTotal()">
+
+
+        <div class="customer-fields">
+
+            <label>Your Name</label>
+
+            <input id="customerName"
+            placeholder="Full name">
+
+
+            <label>Phone</label>
+
+            <input id="customerPhone"
+            placeholder="+250...">
+
+
+            <label>District</label>
+
+            <input id="district"
+            placeholder="District">
+
+
+            <label>Sector</label>
+
+            <input id="sector"
+            placeholder="Sector">
+
+
+            <label>Cell</label>
+
+            <input id="cell"
+            placeholder="Cell">
+
+
+            <label>Village</label>
+
+            <input id="village"
+            placeholder="Village">
+
+
+            <label>Payment</label>
+
+            <select id="payment">
+
+                <option>MTN Mobile Money</option>
+
+                <option>Airtel Money</option>
+
+            </select>
+            <div class="payment-service">
+
+    <div class="payment-logos">
+
+        <div class="payment-logo">
+            <img src="images/mtn-momo.png" alt="MTN MoMo">
+        </div>
+
+        <div class="payment-logo">
+            <img src="images/airtel-money.png" alt="Airtel Money">
+        </div>
+
+    </div>
+
+    <h3>Secure Payment</h3>
+    <p>MTN MoMo & Airtel Money</p>
+
+</div>
+
+        </div>
+
+
+        <div class="order-total">
+
+            Total:
+            <strong id="orderTotal">
+                Rwf 0
+            </strong>
+
+        </div>
+
+
+        <button class="primary-button full"
+        onclick="submitOrder()">
+
+            Confirm Order
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- SEARCH MODAL -->
+
+<div class="modal"
+id="searchModal">
+
+    <div class="modal-box">
+
+        <button class="modal-close"
+        onclick="closeSearch()">
+
+            ×
+
+        </button>
+
+        <h2>Search Products</h2>
+
+        <input id="searchInput"
+        placeholder="Search furniture..."
+        oninput="searchProducts()">
+
+        <div id="searchResults"></div>
+
+    </div>
+
+</div>
+
+
+<!-- CART MODAL -->
+
+<div class="modal"
+id="cartModal">
+
+    <div class="modal-box">
+
+        <button class="modal-close"
+        onclick="closeCart()">
+
+            ×
+
+        </button>
+
+        <h2>Your Cart</h2>
+
+        <div id="cartItems"></div>
+
+    </div>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+</html>
